@@ -1,3 +1,9 @@
+![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
+![Language](https://img.shields.io/badge/language-C-blue.svg)
+![Framework](https://img.shields.io/badge/framework-SDL2-blue.svg)
+![Development Stage](https://img.shields.io/badge/stage-alpha-orange.svg)
+![Open Source](https://img.shields.io/badge/open%20source-yes-brightgreen.svg)
+
 # NeoRaquet Game Engine
 
 NeoRaquet is a game engine developed using SDL2 for creating 2D games. This engine includes functionalities for rendering, audio, input handling, and basic game object management.
