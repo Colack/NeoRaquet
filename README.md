@@ -64,7 +64,6 @@ After building the project, you can run the executable from the `bin` directory:
 ```
 NeoRaquet/
 ├── src/                # Source files
-│   ├── main.c
 │   ├── NeoRaquet.h
 │   ├── NeoRaquet_Actor.c
 │   ├── NeoRaquet_Actor.h
@@ -77,9 +76,6 @@ NeoRaquet/
 │   ├── NeoRaquet_Render.c
 │   ├── NeoRaquet_Render.h
 │   └── NeoRaquet_Types.h
-├── obj/                # Compiled object files
-├── bin/                # Output directory for the executable
-├── Makefile
 └── README.md
 ```
 
