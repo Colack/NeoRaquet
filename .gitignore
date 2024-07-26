@@ -1,3 +1,6 @@
 game
 /bin
 /obj
+
+# Ignore .ppf files, but only if they are in the root directory
+*.ppf

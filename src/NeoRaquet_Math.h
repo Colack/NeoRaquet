@@ -46,4 +46,34 @@ float lerp(float a, float b, float f) {
     return a + f * (b - a);
 }
 
-#endif
+float point_distance(float x1, float y1, float x2, float y2) {
+    float dx = x2 - x1;
+    float dy = y2 - y1;
+    return sqrt(dx * dx + dy * dy);
+}
+
+float vector_magnitude(float x, float y) {
+    return sqrt(x * x + y * y);
+}
+
+void normalize_vector(float* x, float* y) {
+    float magnitude = vector_magnitude(*x, *y);
+    if (magnitude != 0) {
+        *x /= magnitude;
+        *y /= magnitude;
+    }
+}
+
+float degrees_to_radians(float degrees) {
+    return degrees * (M_PI / 180.0);
+}
+
+float radians_to_degrees(float radians) {
+    return radians * (180.0 / M_PI);
+}
+
+int point_in_rect(int px, int py, int rx, int ry, int rw, int rh) {
+    return (px >= rx && px <= rx + rw && py >= ry && py <= ry + rh);
+}
+
+#endif 
