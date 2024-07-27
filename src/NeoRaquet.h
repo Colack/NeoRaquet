@@ -13,7 +13,7 @@
 #define SCREEN_HEIGHT 360
 #define SCREEN_SCALE 2
 extern const float FRAMERATE_CAP;
-#define WINDOW_TITLE "B-TRON"
+#define WINDOW_TITLE "My Neo-Raquet Program"
 #define AUDIO_SAMPLE_RATE 44100
 #define VSYNC
 

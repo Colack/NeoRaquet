@@ -51,4 +51,17 @@ typedef struct Actor {
     void (*update)(struct Actor* self);
 } Actor;
 
+typedef struct ReActor {
+  int x;
+  int y;
+  Raquet_CHR cur_image;
+  Raquet_Point origin;
+  int width;
+  int height;
+  int angle;
+  Palette color;
+  Raquet_BoundingBox bbox;
+  SDL_RendererFlip flip;
+} ReActor;
+
 #endif
