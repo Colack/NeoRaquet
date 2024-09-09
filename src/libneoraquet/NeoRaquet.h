@@ -1,3 +1,13 @@
+/*
+    This is the main entry file for my C game engine, NeoRaquet.
+
+    NeoRaquet is a simple 2D game engine that uses SDL2 for rendering and input handling.
+
+    Credits to the following resources:
+        - Raquet by @sinislosion
+        - SDL2
+*/
+
 #ifndef NEORAQUET_H
 #define NEORAQUET_H
 
