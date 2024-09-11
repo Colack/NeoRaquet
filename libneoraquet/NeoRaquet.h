@@ -35,8 +35,8 @@ extern SDL_Event e;
 extern Camera camera;
 extern Uint64 start_tick;
 
-void createthedog();
-void gameLoop();
+void NeoRaquet_Create();     // User will declare this function in their main.c file
+void NeoRaquet_Loop();      // User will declare this function in their main.c file
 int NeoRaquet_Init();
 void NeoRaquet_MainLoop();
 

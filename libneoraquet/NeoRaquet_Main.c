@@ -63,7 +63,7 @@ void NeoRaquet_MainLoop() {
     } else {
         printf("NeoRaquet Initialized\n");
         fflush(stdout);
-        createthedog();
+        NeoRaquet_Create();
 
         while (1) {
             while (SDL_PollEvent(&e)) {
@@ -85,7 +85,7 @@ void NeoRaquet_MainLoop() {
 
             sdlmouse = SDL_GetMouseState(NULL, NULL);
             start_tick = SDL_GetTicks64();
-            gameLoop();
+            NeoRaquet_Loop();
             if ((1000.0f / FRAMERATE_CAP) > SDL_GetTicks64() - start_tick) {
                 SDL_Delay(1000.0f / FRAMERATE_CAP - (SDL_GetTicks64() - start_tick));
             }

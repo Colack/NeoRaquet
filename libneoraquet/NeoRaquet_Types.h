@@ -54,14 +54,38 @@ typedef struct Actor {
 typedef struct ReActor {
   int x;
   int y;
-  Raquet_CHR cur_image;
-  Raquet_Point origin;
+  NeoRaquet_CHR cur_image;
+  NeoRaquet_Point origin;
   int width;
   int height;
   int angle;
   Palette color;
-  Raquet_BoundingBox bbox;
+  NeoRaquet_BoundingBox bbox;
   SDL_RendererFlip flip;
 } ReActor;
+
+typedef struct NeoRaquet_Sprite {
+    NeoRaquet_CHR chr;
+    NeoRaquet_Point origin;
+    int width;
+    int height;
+    Palette color;
+    SDL_RendererFlip flip;
+} NeoRaquet_Sprite;
+
+typedef struct NeoRaquet_SpriteSheet {
+    NeoRaquet_CHR chr;
+    NeoRaquet_Point origin;
+    int width;
+    int height;
+    Palette color;
+    SDL_RendererFlip flip;
+    int num_frames;
+    int frame_width;
+    int frame_height;
+    int frame_delay;
+    int cur_frame;
+    int cur_frame_delay;
+} NeoRaquet_SpriteSheet;
 
 #endif
